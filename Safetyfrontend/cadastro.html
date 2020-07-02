@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Safety | Cadastro</title>
+    <meta content="" name="descriptison">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.ico" rel="icon">
+    <link href="assets/img/favicon.ico" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+    <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- ======= Header ======= -->
+    <header id="header">
+        <div class="container">
+
+            <div id="logo" class="pull-left">
+                <!-- Uncomment below if you prefer to use an image logo -->
+                <a href="index.html"><img src="assets/img/logo.png" style="width: 20%;" alt="logo"></a>
+            </div>
+
+            <nav id="nav-menu-container">
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">Sobre</a></li>
+                    <li><a href="index.html#services">Serviços</a></li>
+                    <li><a href="index.html#contact">Contato</a></li>
+                </ul>
+            </nav><!-- #nav-menu-container -->
+        </div>
+    </header><!-- End Header -->
+
+    <main>
+        <article id="contact" class="wow fadeInUp">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Cadastro</h2>
+                </div>
+            </div>
+
+            <div class="container">
+                <section class="form">
+                    <form id="cadastro" action="javascript:enviarForm()" method="post" role="form" class="cadastro-form"
+                        novalidate>
+                        <div class="form-row">
+                            <div class="form-group col-md-12">
+                                <input type="text" name="nome" class="form-control" id="nome"
+                                    placeholder="Nome da empresa" required />
+                                <div class="invalid-feedback">
+                                    Por favor, informe um nome válido.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-8">
+                                <input type="text" name="razaoSocial" class="form-control" id="razaoSocial"
+                                    placeholder="Razão social" required />
+                                <div class="invalid-feedback">
+                                    Por favor, informe uma razão social válida.
+                                </div>
+
+                            </div>
+                            <div class="form-group col-md-4">
+                                <input type="text" name="cnpj" class="form-control" id="cnpj" placeholder="CNPJ"
+                                    pattern="[0-9]{14}" aria-describedby="passwordHelpBlock" required />
+                                <small id="passwordHelpBlock" class="form-text text-muted">
+                                    Insira apenas números.
+                                </small>
+                                <div class="invalid-feedback">
+                                    Por favor, informe um CNPJ válido.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-md-12">
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Email"
+                                    required />
+                                    <div class="invalid-feedback">
+                                        Por favor, informe um e-mail válido.
+                                    </div>
+                            </div>
+
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <input type="tel" class="form-control" name="telefone" id="telefone"
+                                    placeholder="Telefone: 00 0000 0000"  pattern="[0-9]{10}" aria-describedby="passwordHelpBlock" />
+                                    <small id="passwordHelpBlock" class="form-text text-muted">
+                                        Insira apenas números.
+                                    </small>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input type="tel" class="form-control" name="celular" id="celular"
+                                    placeholder="Celular: 00 00000 0000" pattern="[0-9]{11}" aria-describedby="passwordHelpBlock" />
+                                    <small id="passwordHelpBlock" class="form-text text-muted">
+                                        Insira apenas números.
+                                    </small>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-md-3">
+                                <select id="cidade" name="cidade" class="form-control" required>
+                                    <option value="">Cidade</option>
+                                    <option value="1">Belo Horizonte</option>
+                                    <option value="2">Betim</option>
+                                    <option value="3">Contagem</option>
+                                    <option value="4">Ibirité</option>
+                                    <option value="5">Nova Lima</option>
+                                    <option value="6">Ribeirão das Neves</option>
+                                    <option value="7">Sabará</option>
+                                    <option value="8">Santa Luzia</option>
+                                    <option value="9">Sete Lagoas</option>
+                                    <option value="10">Vespasiano</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Por favor, selecione uma cidade.
+                                </div>
+                            </div>
+                            <div class="form-group col-9">
+                                <input type="text" class="form-control" id="endereco" placeholder="Endereço" required>
+                                <div class="invalid-feedback">
+                                    Por favor, informe um endereço válido.
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-4">
+                                <input type="text" class="form-control" id="bairro" placeholder="Bairro" required>
+                                <div class="invalid-feedback">
+                                    Por favor, informe um bairro válido.
+                                </div>
+
+                            </div>
+                            
+
+                            <div class="form-group col-md-4">
+                                <input type="text" class="form-control" id="numero" placeholder="Número" required>
+                                <div class="invalid-feedback">
+                                    Por favor, informe um número válido.
+                                </div>
+
+                            </div>
+
+                            <div class="form-group col-md-4">
+                                <input type="text" class="form-control" id="complemento" placeholder="Complemento">
+                            </div>
+
+
+
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-12" style="padding-bottom: 10px;">Categoria do estabelecimento:</div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-md-12" id="categoria">
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input class="custom-control-input" type="radio" id="açougue" value="1"
+                                        name="categoria" required>
+                                    <label class="custom-control-label" for="açougue">Açougue</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input class="custom-control-input" type="radio" id="cozinha" value="2"
+                                        name="categoria" required>
+                                    <label class="custom-control-label" for="cozinha">Cozinha Industrial</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input class="custom-control-input" type="radio" id="distribuidora" value="3"
+                                        name="categoria" required>
+                                    <label class="custom-control-label" for="distribuidora">Distribuidora</label>
+                                </div>
+
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input class="custom-control-input" type="radio" id="industria" value="4"
+                                        name="categoria" required>
+                                    <label class="custom-control-label" for="industria">Indústria</label>
+                                </div>
+
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input class="custom-control-input" type="radio" id="lanchonete" value="5"
+                                        name="categoria" required>
+                                    <label class="custom-control-label" for="lanchonete">Lanchonete</label>
+                                </div>
+
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input class="custom-control-input" type="radio" id="padaria" value="6"
+                                        name="categoria" required>
+                                    <label class="custom-control-label" for="padaria">Padaria</label>
+                                </div>
+
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input class="custom-control-input" type="radio" id="restaurante" value="7"
+                                        name="categoria" required>
+                                    <label class="custom-control-label" for="restaurante">Restaurante</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input class="custom-control-input" type="radio" id="supermercado" value="8"
+                                        name="categoria" required>
+                                    <label class="custom-control-label" for="supermercado">Supermercado</label>
+                                </div>
+                            </div>
+
+                        </div>
+                        
+
+                        <div class="text-center"><button type="submit">Enviar</button></div>
+                        
+                        <div class="mb-3">
+                            <div id="erro"  style="display: none; color: red; text-align: center;">Falha ao enviar</div>
+                            <div id="enviado" style="display: none; color: lightgreen; text-align: center;">Cadastro enviado com sucesso!</div>
+                        </div>
+
+                    </form>
+                </section>
+            </div>
+        </article>
+    </main>
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+        <div class="container">
+            <div class="copyright">
+                &copy; Copyright <strong>Safety</strong>. All Rights Reserved
+            </div>
+            <div class="credits">
+            </div>
+        </div>
+    </footer><!-- End Footer -->
+
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+    <script src="assets/vendor/wow/wow.min.js"></script>
+    <script src="assets/vendor/venobox/venobox.min.js"></script>
+    <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script src="assets/vendor/jquery-sticky/jquery.sticky.js"></script>
+    <script src="assets/vendor/superfish/superfish.min.js"></script>
+    <script src="assets/vendor/hoverIntent/hoverIntent.js"></script>
+    <script src="forms/requisicao.js"></script>
+
+
+
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
